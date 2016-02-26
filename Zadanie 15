@@ -1,0 +1,105 @@
+\documentclass[12pt]{article} 
+
+\textheight=23.7cm \textwidth=17cm  \topmargin=-1.5cm \hoffset=-2cm
+
+
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+
+\usepackage{amscd}
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{amsthm}
+
+
+\def\B{\mathcal{B}}
+\def\E{\mathcal{E}}
+\def\F{\mathcal{F}}
+\def\G{\mathcal{G}}
+\def\O{\mathcal{O}}
+\def\Q{\mathcal{Q}}
+\def\P{\mathcal{P}}
+\def\C{\mathcal{C}}
+\def\U{\mathcal{U}}
+\def\uni{\mathrm{unif}}
+\def\Code{\mathrm{Code}}
+\def\diag{\mathrm{diag}}
+\def\Mah{\mathrm{Mah}}
+\def\N{\mathbb{N}}
+\def\Z{\mathbb{Z}}
+\def\R{\mathbb{R}}
+\def\Nor{\mathcal{N}}
+\def\I{\mathrm{I}}
+\def\f{\mathrm{f}}
+\def\m{\mathrm{m}}
+
+% definicje przydatnych potem komend
+
+\def\C{{\mathbb C}} %  Zespolony
+\def\Z{{\mathbb Z}} %   Całkowity
+\def\N{{\mathbb N}} %  Naturalny
+\def\R{{\mathbb R}} %  Rzeczywisty
+\def\Q{{\mathbb Q}} % Wymierne
+
+\def\e{\varepsilon}
+\def\w{\omega}
+\def\dom{\mathrm{dom}}
+
+\begin{document}
+
+
+\title{Zadania z Rachunku Prawdopodobieństwa \\ ćwiczenia 1}
+\author{Daniel Słaby}
+\date{}
+\maketitle
+
+\medskip
+\noindent{\bf Zad. 15} 
+\medskip
+
+Ze zbioru
+\[
+ \{1, 2, 3,... ,29, 30\}
+\]
+ losujemy 10 różnych liczb. Znaleźć prawdopodobieństwa następujących zdarzeń:
+ \\
+\\a) zdarzenie A = wszystkie wylosowane liczby są nieparzyste
+\\
+\\ b) zdarzenie B = dokładnie 3 liczby podzielne są przez 5,
+\\
+\\ c) zdarzenie C = wylosowano 5 liczb parzystych, 5 liczb nieparzystych, w tym dokładnie jedna liczba podzielna przez 10?
+
+\[
+n=30,k=10
+\]
+
+\[
+|\Omega|={n \choose k}={30 \choose 10} = 30045015
+\]
+
+\[
+|A|={15 \choose 10} = \frac{15!}{5!\cdot10!} = \frac{10 !\cdot 11 \cdot 12 \cdot 13 \cdot 14 \cdot 15}{10! \cdot 125} = 3003
+\]
+
+\[
+|B|={6 \choose 3} * {24 \choose 7} = \frac{3! \cdot 4 \cdot 5 \cdot 6}{3! \cdot 6} \cdot \frac{17!\cdot18\cdot19\cdot20\cdot21\cdot22\cdot23\cdot24}{17!\cdot7!}= 20 \cdot 346104 = 6 922 080 
+\]
+
+\[|C|={15 \choose 5} * {12 \choose 4} * {3 \choose 1} = \frac{10! \cdot 11 \cdot 12 \cdot 13 \cdot 14 \cdot 15}{10! \cdot 5!}  \cdot \frac{8!\cdot9\cdot10\cdot11\cdot12}{8!\cdot4!} \cdot 3= 3003 \cdot 495 \cdot 3 = 29 700\]
+
+Obliczamy prawdopodobieństwa
+\[
+P(A)=\frac{|A|}{|\Omega|}=\frac{3003}{30045015}=\frac{1}{10005}.
+\]
+
+\[
+P(B)=\frac{|B|}{|\Omega|}=\frac{ 6 922 080 }{30045015}=\frac{14752}{10 015 005}.
+\]
+\[
+P(C)=\frac{|C|}{|\Omega|}=\frac{ 29 700}{30045015}=\frac{60}{60697}.
+\]
+
+\end{document}
