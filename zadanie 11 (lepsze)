@@ -1,0 +1,32 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[polish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+\title{zadanie 11}
+\begin{document}
+	
+	
+	\medskip
+	\noindent{\bf Zad. 11} 
+	\medskip
+	
+	Spośród 9 klocków wybieramy 4, bez zwracania. Na klockach nie ma cyfry 0 więc nie musimy martwić się możliwością, w której nasza liczba czterocyfrowa zaczynałaby się od zera.\\
+	
+	
+	Możliwości losowań:\\
+	Cyfry na miejscu dziesiątek tysiecy = 9 możliwosci\\
+	Cyfry na miejscu tysiecy = 8 możliwosci\\
+	Cyfry na miejscu dziesiątek = 7 możliwosci\\
+	Cyfry na miejscu jednostek = 6 mozliwosci
+	
+	$$
+	9*8*7*6 = 3024
+	$$
+	
+	Czyli możemy utworzyć w taki sposób 3024 liczby.
+	
+	
+\end{document}
