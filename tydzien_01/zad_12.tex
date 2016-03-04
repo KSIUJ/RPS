@@ -3,34 +3,16 @@
 \noindent{\bf Zad. 12} 
 \medskip
 
-Przy rzucie dwiema kostkami możliwe wyniki przedstawia tabela:\\
-\begin{table}[htb]
-\centering
-\begin{tabular}{|c|c|c|c|c|c|c|}
-\hline
- & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} \\
-\hline
-\textbf{1} & 2 & 3 & 4 & 5 & 6 & 7 \\
-\hline
-\textbf{2} & 3 & 4 & 5 & 6 & 7 & 8 \\
-\hline
-\textbf{3} & 4 & 5 & 6 & 7 & 8 & 9 \\
-\hline
-\textbf{4} & 5 & 6 & 7 & 8 & 9 & 10 \\
-\hline
-\textbf{5} & 6 & 7 & 8 & 9 & 10 & 11 \\
-\hline
-\textbf{6} & 7 & 8 & 9 & 10 & 11 & 12 \\
-\hline
-\end{tabular}
-\end{table}
+Zdefiniujmy omegę - $\Omega = \{\{x,y\} : x, y \in \{1, \dots , 6\}\}$.
 
-Odczytując z niej wyniki mamy:\\
+$$|\Omega| = 6 * 6 = 36$$
 
-\begin{tabular}{llll}
-\textbf{2} - 1 sposób, & \textbf{5} - 4, & \textbf{8} - 5, & \textbf{11} - 2, \\
-\textbf{3} - 2, & \textbf{6} - 5, & \textbf{9} - 4, & \textbf{12} - 1. \\
-\textbf{4} - 3, & \textbf{7} - 6, & \textbf{10} - 3, & \\
-\end{tabular}
-\\
-\\
+Niech A będzie zdarzeniem, gdzie wypadają różne wyniki na kościach.
+Łatwiej będzie policzyć moc zdarzenia przeciwnego - A`.
+
+$$A` = \{\{1,1\}, \{2,2\}, \{3,3\}, \{4,4\}, \{5,5\}, \{6,6\}\}$$
+$$|A`| = 6$$
+
+Więc
+
+$$|A| = |\Omega| - |A`| = 36 - 6$$
