@@ -1,0 +1,36 @@
+\medskip
+\noindent{\bf Zad. 8} 
+\medskip
+
+Doswiadczenie: Mamy w urnie b kul bialych i c czarnych. Wyciagamy jedna kule i natychmiast ja wyrzucamy, nie sprawdzajac koloru. Nastepnie losujemy kolejna kule. Jakie jest prawdopodobienstwo ze biala jest kula z pierwszego losowania, gdy biala jest kula z drugiego losowania.  
+$$
+$$
+H1 - za pierwszym razem losujemy czarna kule
+$$
+P(H1) = \frac{c}{b+c}
+$$
+H2 - za pierwszym razem losujemy biala kule
+$$
+P(H2) = \frac{b}{b+c}
+$$
+A -  za drugim razem losujemy kule biala
+$$
+P(A) = \frac{c}{b+c}*\frac{b}{b+c-1} + \frac{b}{b+c}*\frac{b-1}{b+c-1}
+$$
+P(H2|A) - prawdopodobienstwo wylosowania kuli bialej w pierwszym losowaniu pod warunkiem ze w drugim zostala wylosowana kula biala.
+Z tw Bayesa mamy:
+$$
+P(H2|A) = \frac{P(A|H2)P(H2)}{P(A)}
+$$
+a prawdopodobienstwo wylosowania kuli bialej w drugim losowaniu pod warunkiem ze w pierwszym wylosowalismy biala to
+$$
+P(A|H2) = \frac{b-1}{b+c-1}
+$$
+czyli
+$$
+P(H2|A) = \frac{ \frac{b-1}{b+c-1} * \frac{b}{b+c} }{ \frac{c}{b+c}*\frac{b}{b+c-1} + \frac{b}{b+c}*\frac{b-1}{b+c-1} }
+$$
+po skroceniu otrzymujemy koncowy wynik:
+$$
+P(H2|A) =\frac{ b^{2} - b} {b^{2} - b + bc}
+$$
