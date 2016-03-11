@@ -1,0 +1,51 @@
+\medskip
+\noindent{\bf Zad. 6} 
+\medskip
+
+Pierwsza urna zawiera 4 białe i jedną czarną kule, druga - 2 białe i 3 czarne. Losujemy urnę tak, by szansa wybrania pierwszej urny była dwukrotnie mniejsza niż drugiej. Następnie z wybranej urny losujemy kulę. Jakie jest prawdopodobieństwo wylosowania kuli białej?\\ 
+\\
+
+Rozwiązanie:
+$$
+P(H_1) \ - \ prawdopodobienstwo \ wyboru \ pierwszej \ urny
+$$
+$$
+P(H_2) \ - \ prawdopodobienstwo \ wyboru \ drugiej \ urny
+$$
+\\
+Z treści zadania wiemy, że:
+$$
+ P(H_2) = 2* P(H_1)
+$$
+wiadomo również, że:
+$$
+ P(H_1) + P(H_2) =1
+$$
+Rozwiązując układ równań otrzymujemy:
+$$
+P(H_1) = \frac{1}{3}
+$$
+$$
+P(H_2) = \frac{2}{3}
+$$
+
+Podstawiając do wzoru na prawdopodobieństwo całkowite otrzymujemy:
+$$
+P(A) = P(A|H_1)*P(H_1) + P(A|H_2)*P(H_2) = \frac{4}{5} * \frac{1}{3} + \frac{2}{5} * \frac{2}{3} = \frac{8}{15}
+$$
+gdzie:
+$$
+P(A|H_1) \ - \ prawdopodobienstwo \ wylosowania \ bialej \ kuli \ z \ pierwszej \ urny 
+$$
+$$
+P(A|H_2) \ - \ prawdopodobienstwo \ wylosowania \ bialej \ kuli \ z \ drugiej \ urny 
+$$
+\\
+Zadanie można też rozwiązać przy pomocy drzewka. W takim przypadku mnożymy prawdopodobieństwo wyboru urny przez prawdopodobieństwo wyboru białej kuli z tej urny. Robimy tak z obiema urnami i wyniki iloczynów sumujemy.
+
+$$
+\Tree [.Wybor\ urny [.I\\\ urna\\\ $\frac{1}{3}$ [.biała\ $\frac{4}{5}$ ] [.czarna\ $\frac{1}{5}$ ] ]
+	 [.II\\\ urna\\\ $\frac{2}{3}$ [.biała\ $\frac{2}{5}$ ]
+		 [.czarna\ $\frac{3}{5}$ 
+			  ] ] ]
+$$
