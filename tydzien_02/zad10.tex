@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{mathtools}
+\usepackage{polski}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage[utf8]{inputenc}
+\begin{document}
+Liczymy prawdopodobienstwo wystapienia defektu w inspekcji:
+
+P(D) = $\frac{2}{10} * \frac{5}{100} + \frac{8}{10} * \frac{3}{10} = \frac{1}{4}$
+$$
+$$
+$$
+$$
+Liczymy prawdopodobienstwo, ze modul przeszedl proces inspekcji:
+
+P(I/D) = $\frac{P(D/I) * P(I)}{P(D)} = \frac{\frac{5}{100}*\frac{2}{10}}{\frac{1}{4}} = \frac{4}{100}$
+$$
+$$
+$$
+$$
+ 
+\tikzstyle{level 1}=[level distance=3.5cm, sibling distance=3.5cm]
+\tikzstyle{level 2}=[level distance=3.5cm, sibling distance=2cm]
+\tikzstyle{bag} = [text width=4em, text centered]
+\tikzstyle{end} = [circle, minimum width=3pt,fill, inner sep=0pt]
+
+
+\begin{tikzpicture}[grow=right, sloped]
+
+
+
+
+\node[bag] {}
+    child {
+        node[bag] {I}        
+            child {
+                node[end, label=right:
+                    {D}] {}
+                edge from parent
+                node[above] {}
+                node[below]  {$\frac{5}{100}$}
+            }
+            child {
+                node[end, label=right:
+                    {ND}] {}
+                edge from parent
+                node[above] {}
+                node[below]  {$\frac{95}{100}$}
+            }
+            edge from parent 
+            node[above] {}
+            node[below]  {$\frac{2}{10}$}
+    }
+       child {
+        node[bag] {NI}        
+            child {
+                node[end, label=right:
+                    {D}] {}
+                edge from parent
+                node[above] {}
+                node[below]  {$\frac{3}{10}$}
+            }
+            child {
+                node[end, label=right:
+                    {ND}] {}
+                edge from parent
+                node[above] {}
+                node[below]  {$\frac{7}{10}$}
+            }
+            edge from parent 
+            node[above] {}
+            node[below]  {$\frac{8}{10}$}
+    };
+\end{tikzpicture}
+ 
+\end{document}
