@@ -1,0 +1,40 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\begin{document}
+\medskip 
+\noindent{\bf Zad. 4}  
+\begin{flushleft}
+$\Omega$ - zbiór możliwych godzin przybycia dwóch kobiet między 16 a 17\
+\\
+A - zbiór możliwych godzin przybycia dwóch kobiet tak, aby się spotkały
+\[ \Omega =\left \{(a,b) \in <16,17>^2\right \} \]
+\[ A = \left \{(a,b) \in <16,17>^2, |a-b| \le \frac{20}{60}\right \} \] 
+\[ |a-b| < \frac{20}{60} \Rightarrow a-b \le \frac{20}{60} \wedge a-b \ge -\frac{20}{60}\]
+Po przeskalowaniu układu do 0 otrzymujemy rysunek:
+\begin{center} \setlength{\unitlength}{0.6mm} \begin{picture}(110,110)
+\put(-5,90){\mbox{1}}\put(0,0){\vector(0,0){100}}
+\put(90,-5){\mbox{1}}\put(0,0){\vector(1,0){100}} \put(100,-5){\mbox{B}} \put(-5,100){\mbox{A}} 
+\qbezier(0,90)(90,90)(90,90)
+\qbezier(90,0)(90,90)(90,90)
+\qbezier(30,0)(60,30)(90,60)
+\qbezier(0,30)(30,60)(60,90)
+\qbezier(0,10)(40,10)(40,10)
+\qbezier(0,20)(50,20)(50,20)
+\qbezier(0,30)(60,30)(60,30)
+\qbezier(10,40)(70,40)(70,40)
+\qbezier(20,50)(80,50)(80,50)
+\qbezier(30,60)(90,60)(90,60)
+\qbezier(40,70)(90,70)(90,70)
+\qbezier(50,80)(90,80)(90,80)
+\put(-25,30){\mbox{a - $\frac{1}{3}$}=b} 
+\put(25,-7){\mbox{a + $\frac{1}{3}$}=b} 
+\end{picture} \end{center}
+Moc $\Omega$ to pole całego kwadratu
+\[ \#\Omega = 1\cdot1 \]
+Moc A to pole zacznaczonej figury: pole kwadratu - pola trójkątów
+\[ \#A = 1 - 2\cdot\frac{1}{2}\cdot\frac{2}{3}\cdot\frac{2}{3}\]
+Więc:
+\[ P(A) = \frac{1-2\cdot\frac{1}{2}\cdot\frac{2}{3}\cdot\frac{2}{3}}{1} = \frac{5}{9}\]
+\end{flushleft}
+\end{document}
