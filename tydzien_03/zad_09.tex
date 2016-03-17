@@ -1,0 +1,46 @@
+\documentclass[11pt,makeidx, a4paper]{memoir}
+ 
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsmath}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage{multicol}
+\usepackage{graphicx}
+
+
+
+%******************************************************************
+% Geometria strony 
+%******************************************************************
+\usepackage{geometry} 
+\geometry{total={210mm,297mm}, 
+left=15mm,right=17mm,% 
+bindingoffset=10mm, top=20mm, bottom=20mm}
+
+
+
+\begin{document}
+
+
+Dane są zdarzenia niezależne $A$ i $B$ przy czym $P(A) = P(B) = p$. Jak jest szansa, że zaszły oba, jeśli wiadomo, że zaszło co najmniej jedno.
+
+
+$$
+P(A \cap B | A \cup B ) =  \frac {P(A \cap B ) \cap P ( A \cup B)} { P ( A \cup B)} = 
+\frac {P(A \cap B )} { P ( A \cup B)} =  
+\frac {P(A) * P (B)} {P(A) + P (B) - P ( A \cap B)} = 
+$$
+$$
+\frac {p * p} {p + p - p * p} = \frac {p ^ {2} }{2p - p ^{2}} = 
+\frac {p ^{2}} {p( 2 - p) } = 
+\frac {p} { 2 - p } 
+$$
+
+
+
+
+
+\end{document}
