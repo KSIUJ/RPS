@@ -1,0 +1,49 @@
+\medskip
+\noindent{\bf Zad. 8} 
+\medskip
+\\
+
+\begin{flushleft}
+$\Omega$ - zbiór możliwych godzin w których procesy zgłaszają się po zasób\
+\\
+A - zbiór możliwych godzin awarii systemu
+\[ \Omega =\left \{(a,b) \in <10,12>^2\right \} \]
+\[ A = \left \{(a,b) \in <10,12>^2, |a-b| \le \frac{10}{120}\right \} \] 
+\[ |a-b| < \frac{10}{120} \Rightarrow a-b \le \frac{10}{120} \wedge a-b \ge -\frac{10}{120}\]
+Po przeskalowaniu układu otrzymujemy rysunek:
+\begin{center} \setlength{\unitlength}{0.6mm} 
+	\begin{picture}(110,110)
+	
+	\put(-5,90){\mbox{1}}\put(0,0){\vector(0,0){100}}
+	\put(90,-5){\mbox{1}}\put(0,0){\vector(1,0){100}} 
+	
+	\put(100,-5){\mbox{b}} 
+	\put(-5,100){\mbox{a}} 
+	
+	\qbezier(0,90)(90,90)(90,90)
+	\qbezier(90,0)(90,90)(90,90)
+	
+	\put(0,10){\line(1,1){80}}
+	\put(10,0){\line(1,1){80}}
+	
+	\put(0,10){\line(1,0){20}}
+	\put(10,20){\line(1,0){20}}
+	\put(20,30){\line(1,0){20}}
+	\put(30,40){\line(1,0){20}}
+	\put(40,50){\line(1,0){20}}
+	\put(50,60){\line(1,0){20}}
+	\put(60,70){\line(1,0){20}}
+	\put(70,80){\line(1,0){20}}
+	
+	\put(-25,30){\mbox{a - $\frac{1}{12}$}=b} 
+	\put(25,-7){\mbox{a + $\frac{1}{12}$}=b} 
+
+	\end{picture} 
+\end{center}
+Moc $\Omega$ to pole całego kwadratu
+\[ \#\Omega = 1\cdot1 \]
+Moc A to pole zacznaczonej figury: pole kwadratu - pola trójkątów
+\[ \#A = 1 - 2\cdot\frac{1}{2}\cdot(\frac{11}{12})^2 = 1 - \frac{121}{144} = \frac{23}{144}\]
+Więc:
+\[ P(A) = \frac{23}{144} \]
+\end{flushleft}
