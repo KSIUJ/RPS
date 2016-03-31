@@ -1,0 +1,17 @@
+\subsection{Zadanie 13}
+Niech $X$ będzie zmienną losową opisującą liczbę komunikatów odebraną w ciągu godziny. Z warunków zadania widać, że ma ona rozkład Poissona z parametrem $\lambda = 9$.
+
+\begin{enumerate}
+	\item 
+	
+	$$
+	P(X \geq 5) = 1\;-\;P(X < 5) = 1\;-\;(\;P(X = 0) + P(X = 1) + P(X = 2) +P(X = 3) + P(X = 4)\;) 
+	$$ 
+	$$
+	 = 1 - (\;e^{-9} (\;\frac{9^{0}}{0!} + \frac{9^{1}}{1!} + \frac{9^{2}}{2!} + \frac{9^{3}}{3!} + \frac{9^{4}}{4!}\;)\;) = 	1 - e^{-9}\cdot \frac{3563}{8} = 0.945
+	$$ 
+	\item 
+	$$
+	P(X = 5) = e^{-9} \cdot \frac{9^{5}}{5!} = 0.06073
+	$$ 	
+\end{enumerate}
