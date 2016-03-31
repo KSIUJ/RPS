@@ -1,63 +1,11 @@
-\documentclass[12pt]{article} 
+\subsection{Zadanie 7}
 
-\textheight=23.7cm \textwidth=17cm  \topmargin=-1.5cm \hoffset=-2cm
-
-
-
-\usepackage[utf8x]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[polish]{babel}
-
-\usepackage{amscd}
-\usepackage{amsfonts}
-\usepackage{latexsym}
-\usepackage{graphicx}
-\usepackage{amsthm}
-
-
-\def\B{\mathcal{B}}
-\def\E{\mathcal{E}}
-\def\F{\mathcal{F}}
-\def\G{\mathcal{G}}
-\def\O{\mathcal{O}}
-\def\Q{\mathcal{Q}}
-\def\P{\mathcal{P}}
-\def\C{\mathcal{C}}
-\def\U{\mathcal{U}}
-\def\uni{\mathrm{unif}}
-\def\Code{\mathrm{Code}}
-\def\diag{\mathrm{diag}}
-\def\Mah{\mathrm{Mah}}
-\def\N{\mathbb{N}}
-\def\Z{\mathbb{Z}}
-\def\R{\mathbb{R}}
-\def\Nor{\mathcal{N}}
-\def\I{\mathrm{I}}
-\def\f{\mathrm{f}}
-\def\m{\mathrm{m}}
-
-% definicje przydatnych potem komend
-
-\def\C{{\mathbb C}}
-\def\Z{{\mathbb Z}}
-\def\N{{\mathbb N}}
-\def\R{{\mathbb R}}
-\def\Q{{\mathbb Q}}
-
-\def\e{\varepsilon}
-\def\w{\omega}
-\def\dom{\mathrm{dom}}
-
-\begin{document}
-
-
-\medskip
-\noindent{\bf Zad. 7} 
-\medskip
-\newline
-a)$$
+\begin{enumerate}[label=(\alph*)]
+\item
+$$
 P(X=0) = e^{-2,4}*\frac{2,4^{0}}{0!}=e^{-2,4}
 $$
+
 $$
 P(X=1)= e^{-2,4}*\frac{2,4^{1}}{1!}=e^{-2,4}*2,4
 $$
@@ -67,9 +15,11 @@ $$
 $$
 Var(X)=2,4
 $$
-\newline
-b)
-Żeby policzyć prawdopodobieństwo, że zmienna losowa będzie miała wartosc  powyżej 5 można policzyć prawdopodobieństwo zdarzenia przeciwnego.
+
+\item Żeby policzyć prawdopodobieństwo, że zmienna losowa będzie
+miała wartość powyżej 5 można policzyć prawdopodobieństwo zdarzenia
+przeciwnego.
+
 $$
 P(X>5)=1-P(X=0)-P(X=1)-P(X=2)-P(X=3)-P(X=4)-P(X=5)
 $$
@@ -82,7 +32,6 @@ P(X>5)= e^{-2,4}
 \frac{e^{-2,4}*2,4^{4}}{24}-
 \frac{e^{-2,4}*2,4^{5}}{120}
 $$
+
 Zmienna losowa o rozkładzie Poissona opisuje zmienne, w których zdarzenia występują rzadko.
-
-
-\end{document}
+\end{enumerate}
