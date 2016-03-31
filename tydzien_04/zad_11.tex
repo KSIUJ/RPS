@@ -1,0 +1,41 @@
+\subsection{Zadanie 11}
+\begin{enumerate}[label=(\alph*)]
+\item
+
+\begin{align*}
+E(X) &= \frac{1}{\lambda}\\
+&= \frac{1}{\frac{1}{5}} * 3\\
+&= \frac{3}{\frac{1}{5}}\\
+&= 3 * 5\\
+E(X) &= 15
+\end{align*}
+
+
+\begin{align*}
+Var(X) &= \frac{1}{\lambda^2}\\
+&= \frac{1}{(\frac{1}{5})^2} * 3 \\
+&= \frac{1}{\frac{1}{25}} \\
+&= 25 * 3 \\
+&= 75
+\end{align*}
+
+\item Korzystając z formuły Gamma-Poissona
+$$
+P(T<t) = P(X \geq \alpha), \; \; \; \; \; \; (Bo: P(T<t) = P(T \leq t))
+$$
+
+gdzie $$x = 3, \alpha = \frac{1}{5}, t=12 \;\;\;\; (x=3 \,\,\, \text{bo mamy 3 bloki})
+$$
+$$
+P(X \geq 3) = 1 - P(0) - P(1) - P(2) = 1 - F(2)
+$$
+$$
+P(T < 12) = P(X \geq 3) = 1 - F(2) = 1 - 0.597
+$$
+$$
+= 0.430
+$$
+
+$\Rightarrow$ Prawdopodobieństwo, że cały proces kompilacji zostanie przeprowadzony w czasie mniejsyzm niż 12 minut, wynosi $\approx 43 \%$
+
+\end{enumerate}
