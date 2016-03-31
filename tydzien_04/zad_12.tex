@@ -1,0 +1,20 @@
+\subsection{Zadanie 12}
+
+Pięć procent częsci komputerowych produkowanych przez pewnego producenta jest wadliwych. Jakie jest prawdopodobieństwo, że próba 16 częsci zawiera więcej niż 3 częsci wadliwe?
+
+$$
+P(X = 0)={16\choose 0}*(0,95)^{16}*(0,05)^{16-16}=(0,95)^{16}
+$$
+$$
+P(X = 1)={16\choose 1}*(0,95)^{15}*(0,05)^{16-15}=16*(0,95)^{15}*(0,05)
+$$
+$$
+P(X = 2)={16\choose 2}*(0,95)^{14}*(0,05)^{16-14}=120*(0,95)^{14}*(0,05)^{2}
+$$
+$$
+P(X = 3)={16\choose 3}*(0,95)^{13}*(0,05)^{16-13}=560*(0,95)^{13}*(0,05)^{3}
+$$
+
+$$
+P(X > 3)=1-[P(X = 0) + P(X = 1) + P(X = 2) + P(X = 3)]
+$$
