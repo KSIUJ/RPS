@@ -1,0 +1,36 @@
+//(aproksymacja Poissonem rozkladu dwumianowego) 
+//97\% wiadomosci przesylanych droga elektroniczna dociera do odbiorcy bez bledow. Jakie jest prawdopodobienstwo, ze sposrod 200 wyslanych wiadomosci co najmniej 195 bedzie przeslanych poprawnie?
+//
+\[
+o=97\%
+\]
+\[
+k=195
+\]
+\[
+n=200
+\]
+\[
+P( X_{200} = 5) = P( X_\lambda = 5) = {6^3 \over 5!}   \cdot e^{-6\cdot5}
+\]
+
+\[
+\int_0^{1\over2} \mathrm{{{1\over 4\cdot1}\cdot x}\cdot {e}^{-{1 \over 2 }x}}\,\mathrm{d}x=
+\]
+\[
+= {-{1\over4}}\cdot \int x \cdot {e}^{-{1\over2}x}\mathrm{d}x=
+\]
+\[
+= {1\over4}( {-2{e}^{-{1\over2}x}}\cdot x - (-2\int{e}^{-{1\over2}}\mathrm{d}x))=
+\]
+\[
+=
+\bordermatrix{~ & &  \cr
+                 & v=x & {u^'}={e}^{-{1\over2}x} \cr
+                & {v^'}=1 & u = -2 {e}^{-{1\over2}x} \cr} = 
+\]
+\[
+ = {1\over4}(-2 {{e}^{-{1\over2}x}} \cdot x - 4{{e}^{-{1\over2}x}}          )= -{1\over2}{{e}^{-{1\over2}x}}x - {{e}^{-{1\over2}x}}
+\]
+
+
