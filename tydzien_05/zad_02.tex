@@ -1,0 +1,10 @@
+{\bf Zadanie 2.}  \newline
+Proszę wyznaczyć dystrybuantę zmiennej losowej o rozkładzie wykładniczym z parametrem $ \lambda > 0.$
+\newline{\bf Rozwiązanie.} \newline 
+Mamy funkcję rozkładu:
+
+$$ f(x) = \lambda e^{-\lambda x}$$
+dla $ \lambda > 0.$ 
+\newline Aby wyznaczyć dystrybuantę liczymy:
+$$ F(y)=\int_{0}^{y} f(x) dx = \int_{0}^{y}  \lambda e^{-\lambda x} dx =  $$
+$$=\lambda(\left.\frac{-e^{-\lambda x}}{\lambda}\right|_0^y) = \lambda (\frac{-e^{-\lambda y}}{\lambda}-\frac{-e^{0}}{\lambda}) = 1- e^{-\lambda y} $$
