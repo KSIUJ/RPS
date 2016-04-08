@@ -1,36 +1,30 @@
-//(aproksymacja Poissonem rozkladu dwumianowego) 
-//97\% wiadomosci przesylanych droga elektroniczna dociera do odbiorcy bez bledow. Jakie jest prawdopodobienstwo, ze sposrod 200 wyslanych wiadomosci co najmniej 195 bedzie przeslanych poprawnie?
-//
-\[
-o=97\%
-\]
-\[
-k=195
-\]
-\[
-n=200
-\]
-\[
-P( X_{200} = 5) = P( X_\lambda = 5) = {6^3 \over 5!}   \cdot e^{-6\cdot5}
-\]
+\subsection{Zadanie 11}
 
-\[
-\int_0^{1\over2} \mathrm{{{1\over 4\cdot1}\cdot x}\cdot {e}^{-{1 \over 2 }x}}\,\mathrm{d}x=
-\]
-\[
-= {-{1\over4}}\cdot \int x \cdot {e}^{-{1\over2}x}\mathrm{d}x=
-\]
-\[
-= {1\over4}( {-2{e}^{-{1\over2}x}}\cdot x - (-2\int{e}^{-{1\over2}}\mathrm{d}x))=
-\]
-\[
+$o=97\%, k=195, n=200 $
+
+$$P(X_{200} = 5) = P(X_\lambda = 5) = {\frac{6^3}{5!}} \cdot e^{-6 \cdot 5}$$
+
+$$
+\int_0^{\frac{1}{2}} {{\frac{1}{4 \cdot 1}} \cdot x} \cdot {e}^{-{\frac{1}{2}}x}
+\mathrm{d}x =
+$$
+$$
+= {-{\frac{1}{4}}} \int x \cdot {e}^{-{\frac{1}{2}}x}\mathrm{d}x=
+$$
+
+$$
+= {\frac{1}{4}}({-2{e}^{-{\frac{1}{2}}x}} \cdot x - 
+(-2\int{e}^{-{\frac{1}{2}}}\mathrm{d}x))=
+$$
+
+$$
 =
 \bordermatrix{~ & &  \cr
-                 & v=x & {u^'}={e}^{-{1\over2}x} \cr
-                & {v^'}=1 & u = -2 {e}^{-{1\over2}x} \cr} = 
-\]
-\[
- = {1\over4}(-2 {{e}^{-{1\over2}x}} \cdot x - 4{{e}^{-{1\over2}x}}          )= -{1\over2}{{e}^{-{1\over2}x}}x - {{e}^{-{1\over2}x}}
-\]
+                & v=x & {u'}={e}^{-{\frac{1}{2}}x} \cr
+                & {v'}=1 & u = -2 {e}^{-{\frac{1}{2}}x} \cr} = 
+$$
 
-
+$$
+= {\frac{1}{4}}(-2{{e}^{-{\frac{1}{2}}x}} \cdot x - 4{{e}^{-{\frac{1}{2}}x}}) =
+-{\frac{1}{2}}{{e}^{-{\frac{1}{2}}x}}x - {{e}^{-{\frac{1}{2}}x}}
+$$
