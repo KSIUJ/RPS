@@ -1,0 +1,37 @@
+\subsection{Zadanie 14}
+
+\begin{flushleft}
+P(X=k) - losowo wybrany moduł zawiera k błędów \\
+Prawdopodobieństwo zmiennej losowej o rozkładzie Poissona z parametrem $\lambda$:
+\begin{equation}
+    P(X=k)=\left\{\begin{array}{rcl}
+                     \frac{e^{-\lambda\cdot x}}{k!}&dla&k>0\\
+                     0 & dla & k \le 0
+\end{array}\right.
+\end{equation}
+Wyznaczam wartość prawdopodobieństwa przez zdarzenie przeciwne:\\
+\begin{equation}
+    P(X \ge 3)=1-P(X<3)=1-(P(X=0)+P(X=1)+P(X=2))
+\end{equation}
+\begin{center}
+$\lambda$ = ?\\
+\end{center}
+\begin{flushleft}
+Wyznacznam $\lambda$ wykorzystując fakt, że:\\
+\end{flushleft}
+\begin{equation}
+\left\{\begin{array}{rcl}
+EX=\sum_{i=1}^{n} x_i\cdot p_i\\
+EX = \lambda
+\end{array}\right.
+\end{equation}
+Czyli rozwiązując powyższy układ (3) wyznaczam $\lambda$:
+\begin{equation}
+\lambda = 0\cdot \frac{4}{20}+1\cdot \frac{3}{20}+2\cdot \frac{5}{20}+3\cdot \frac{2}{20}+4\cdot \frac{4}{20}+5\cdot \frac{1}{20}+6\cdot \frac{1}{20} = \frac{23}{10}
+\end{equation}
+\\
+Więc podstawiając do (1) wartość $\lambda$ wyznaczoną w (4) otrzymujemy wzór na $P(X=k)$, który podstawiając do (2) da nam ostateczny wynik:\\ 
+\begin{center}
+$P(X\ge3)=0.4039611741$
+\end{center}
+\end{flushleft}

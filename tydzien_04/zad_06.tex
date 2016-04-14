@@ -1,0 +1,32 @@
+\subsection{Zadanie 6}
+
+W klasie jest 20 osób przy czym dziewczyn jest o 6 więcej niż chłopców.
+Nauczyciel wybiera losowo do odpowiedzi cztery osoby, przy czym osoba raz
+wybrana nie jest pytania ponownie. Oblicz prawdopodobieństwo, że nauczyciel
+wybierze:
+
+\begin{enumerate}
+\item samych chłopców
+\item tyle samo dziewcząt co chłopców
+\end{enumerate}
+
+$N$ - liczba osób w klasie, $N = 20$
+$n$ - liczba osób pytanych, $n = 4$
+$M$ - liczba chłopców, $M = 7$
+
+Rozkład prawdopodobieństwa zmiennej losowej X o rozkładzie hipergeometrycznym
+wyraża się wzorem:
+
+$$P(X=k) = \dfrac{\binom{M}{k} * \binom{N-M}{n-k}}{\binom{N}{n}}$$
+
+\begin{enumerate}
+\item
+$P(X=4)= \dfrac{\binom{7}{4} * \binom{13}{0}}{\binom{20}{4}}$
+
+\item
+Trzeba wybrać dwóch chłopaków z 7 i resztę osób z grupy dziewczyn
+
+$A$ - zdarzenie w którym nauczyciel wybrał dwóch chłopców i dwie dziewczynki
+
+$P(A) = P(X=2)= \dfrac{\binom{7}{2} * \binom{13}{2}}{\binom{20}{4}}$
+\end{enumerate}
