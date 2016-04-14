@@ -1,0 +1,16 @@
+\subsection{Zadanie 3}
+
+Oblicz wartość oczekiwaną zmiennej losowej o rozkładzie jednostajnym na odcinku $(a,b)$.
+
+$$
+f(x) = \left\{
+\begin{array}{rcl}
+ \frac{1}{b - a} & \text{dla} & x \in (a,b)\\
+ 0 & \text{w p.p.} &\\
+\end{array}
+\right.
+$$
+  
+$$
+E(x) =  \int_{a}^{b} \frac{1}{b-a} x dx = \frac{x^2}{2(b-a)}\Bigg|^{b}_{a}  = \frac{b^2 - a^2}{2(b-a)} = \frac{a+b}{2}
+$$

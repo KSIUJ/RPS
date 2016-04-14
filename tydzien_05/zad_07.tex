@@ -1,0 +1,21 @@
+\subsection{Zadanie 7}
+
+Mamy daną funkcje z niewiadomymi $a$, $b$, $c$:
+
+$$
+F(x) = \left\{
+\begin{array}{rcl} 0 & \text{dla} & x < 1\\
+b(1-\frac{c}{x}) & \text{dla} & 1 < x \leq a\\
+1 & \text{dla} & x \geq a
+\end{array}
+\right.
+$$
+
+Wiemy że w punkcie 1 równanie drugie przyjmuje wartość 0. Podstawiamy $x = 1$ i otrzymujemy  $0 = b(1 - c)$.
+Z drugiej strony zaś gdy podstawimy górną granicę do drugiego równania (czyli $x = a$) dostajemy
+$b(1 - \frac{c}{a})$
+Z pierwszego równania otrzymujemy: $0 = b(1-c) \Rightarrow b = 0 \vee c = 1$. Jako, że przy $b = 0$
+dystrybuanta będzie nie ciągła zatem przyjmujemy że $c = 1$. 
+Po podstawieniu $c = 1$ otrzymujemy $b(1-\frac{1}{a}) = 1$ i dzielimy obustronnie przez $b$. Dostajemy $1 - \frac{1}{a} = \frac{1}{b}$. Czyli $a > 1$. 
+ 
+Odpowiedź: zatem $c = 1$, $a$ i $b$ zaś spełniają warunek $1 = \frac{1}{a} + \frac{1}{b}$ 

@@ -1,0 +1,15 @@
+\subsection{Zadanie 8}
+
+$$
+P(X > t+s | X > t ) = P(X > s)
+$$
+
+Dla rozkładu wykładniczego:
+$$
+P(X > t+s | X > t ) = \frac{P(X > s + t, X > t)}{P(X > t)} = \frac{P(X > s + t)}{P(X > t)} = \frac{e^{-\lambda(s + t)}}{e^{-\lambda t}} = e^{-\lambda s} = P(X > s)
+$$
+
+Dla rozkładu geometrycznego:
+$$
+P(X > t+s | X > t ) = \frac{P(X > s + t, X > t)}{P(X > t)} = \frac{P(X > s + t)}{P(X > t)} = \frac{(1-p)^{s + t}}{(1-p)^{t}} = (1-p)^{s} = P(X > s)
+$$

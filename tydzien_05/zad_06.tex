@@ -1,0 +1,76 @@
+\subsection{Zadanie 6}
+
+$$
+F(x) = \left\{
+\begin{array}{ll}
+0.5 e^{ax} & \text{gdy} x \leq 1\\
+bx+0.75 & \text{gdy} 1 < x \leq 2\\
+1 & \text{gdy}2 < x
+\end{array}
+\right.
+$$
+
+Ponieważ funkcja musi być ciągła, otrzymujemy następujące
+nierówności dla x w krańcach przedziałów:
+
+\begin{enumerate}
+\item
+$$0.5 e^{ax} < bx+0.75, x = 1 $$
+$$0.5 e^{a} < b + 0.75$$
+$$e^{a} < 2b + 1.5$$
+$$a < ln(2b + 1.5)$$
+
+\item
+$$bx + 0.75 < 1, x = 2$$
+$$2b + 0.75 < 1$$
+$$2b < \frac{1}{4}$$
+$$b < \frac{1}{8}$$
+
+Pochodna funkcji musi być dodatnia, więc:
+\item
+$$(0.5 e^{ax})' = 0.5a e^{ax} \geq 0$$
+$$a \geq 0$$
+\item
+$$(bx + 0.75)'= b \geq 0$$
+\end{enumerate}
+
+Z nierówności 2 i 4 otrzymujemy przedział wartości b, wstawiając krańce tego przedziału do nierówności 1 otrzymamy przedział wartości a:
+$$0 \leq b < \frac{1}{8}$$
+$$a < ln(\frac{3}{2}) \land a < ln(\frac{7}{4}) \land a \geq 0$$
+$$0 \leq a < ln(\frac{3}{2})$$
+
+\begin{enumerate}[label=(\alph*)]
+\item
+$$
+F(x) = \left\{
+\begin{array}{ll}
+0.5e^{\frac{x}{2}} & \text{gdy} \quad x \leq 1\\
+0.1x + 0.75 & \text{gdy} \quad 1 < x \leq 2\\
+1 & \text{gdy} \quad 2 < x
+\end{array}
+\right.
+$$
+
+$$
+P(1 \leq x < 2) = F_{x}(2) - F_{x}(1) = \frac{2}{10} + \frac{3}{4} -
+\frac{1}{2}e^{\frac{1}{2}} = \frac{19}{20} - \frac{1}{2}e^{\frac{1}{2}}
+$$
+
+\item
+$$
+P(0 \leq x \leq 1) = F_{x}(1) - F_{x}(0) = \frac{1}{2}e^{\frac{1}{2}} -
+\frac{1}{2}
+$$
+
+\item
+$$
+P(0.5 \leq x \leq 1.5) = F_{x}(\frac{3}{2}) - F_{x}(\frac{1}{2}) = \frac{3}{20} +
+\frac{3}{4} - \frac{1}{2}e^{\frac{1}{2}}= \frac{9}{10} - \frac{1}{2}e^{\frac{1}{2}}
+$$
+
+\item
+$$
+P(-1 \leq x < 3) = F_{x}(3) - F_{x}(-1) = 1 - \frac{1}{2}e^{\frac{1}{2}}
+$$
+\end{enumerate}
+
