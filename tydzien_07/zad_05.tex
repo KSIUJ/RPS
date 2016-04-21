@@ -1,0 +1,18 @@
+\subsection{Zadanie 5.}
+Wzrost kobiety jest zmienną losową o rozkładzie $N (158, 100)$. Obliczyć jaki
+jest procent kobiet o wzroście pomiędzy $148$ a $168$.
+
+Rozwiązanie:
+
+$$ N(158, 100) $$
+$$ z = \frac{X - 158}{100} $$ //
+
+$$ P( 148 \le X \le 168 ) = P( \frac{148 - 158}{100} \le \frac{X - 158}{100} \le \frac{168 - 158}{100} ) = $$
+$$ = P( \frac{148 - 158}{100} \le z \le \frac{168 - 158}{100} ) = P( \frac{-10}{100} \le z \le \frac{10}{100} ) = $$
+$$ = P( -0.1 \le z \le 0.1 ) = \Phi(0.1) - \Phi(-0.1) = $$
+$$ = P(0.1) - ( 1 - \Phi(0.1) ) =  P(0.1) -  1 + \Phi(0.1)  = $$
+$$ = 0.53983 - 1 +  0.53983 = 0.07966 $$
+
+Odpowiedź:
+
+Procent kobiet o wzroście pomiędzy $148$ a $168$ wynosi 0,07966 (~7%).
