@@ -1,0 +1,44 @@
+\subsection{Zadanie 3.}
+Niech $X$ będzie zmienną losową o rozkładzie $N ( - 5, 100)$. Obliczyć:
+\begin{itemize}
+\item $P (X \leq - 9)$, 
+\item $P (X \in ( - 7, 1))$, 
+\item $P (X \geq - 7)$, 
+\item $P ( | X - 5 | \leq 10)$.
+\end{itemize}
+
+
+Rozwiązanie:
+
+$$ X \sim N ( m, \sigma )$$
+$$ m = -5, \ \ \sigma = 100 $$
+$$ X \sim N ( -5, 100 )$$
+$$ z = \frac{X + 5}{100} $$  \\
+
+$1)$ 
+$$ P( X \le -9 ) = P( \frac{X + 5}{100} \le \frac{-9 + 5}{100} ) = $$
+$$ = P(z \le - \frac{1}{25}) = \Phi(-0.04) = $$
+$$ = 1 -  \Phi(0.04) = 1 - 0.51595 = 0.48405$$ \\
+
+$2)$
+$$ P( X \in (-7, 1) ) = P( \frac{-7 + 5}{100} < z < \frac{1 + 5}{100} ) = $$
+$$ = P( -0.02 < z <  0.06 ) = \Phi(0.06) - \Phi(-0.02) = $$
+$$ = \Phi(0.06) - ( 1 -  \Phi(0.02) ) = \Phi(0.06) - 1 + \Phi(0.02)) = $$
+$$ = 0.52392 - 1 + 0.50798 = 0.0319$$ \\
+
+$3)$
+$$ P( X \ge -7 ) = P( \frac{X+5}{100} \ge \frac{-7 + 5}{100} ) = $$
+$$ = P( z \ge \frac{-7 + 5}{100} ) = 1 - P( z \le \frac{-7 + 5}{100} ) = $$
+$$ = 1 - P( z \le -0.02 ) = 1 - \Phi(-0.02) = $$
+$$ = 1 - ( 1 - \Phi(0.02) ) = 1 - 1 + \Phi(0.02) = $$
+$$ = \Phi(0.02) = 0.50798$$ \\
+
+$4)$
+$$ | X - 5 | \le 10 $$
+$$ X - 5 \le 10 \wedge X - 5 \ge -10 $$
+$$ X \le 15 \wedge X \ge -5 $$ \\
+$$ P( X \in [-5, 15] ) =  P( -5 \le X \le 15 ) = $$
+$$ = P( \frac{-5 + 5}{100} \le \frac{X + 5}{100} \le \frac{15 + 5}{100} ) = $$
+$$ = P( \frac{-5 + 5}{100} \le z \le \frac{15 + 5}{100} ) = P( \frac{0}{100} \le z \le \frac{20}{100} ) = $$
+$$ = P( 0 \le z \le 0.2 ) = \Phi(0.2) - \Phi(0) $$
+$$ = 0.57926 -0.50000 = 0.07926 $$
