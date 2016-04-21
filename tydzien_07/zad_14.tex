@@ -1,0 +1,9 @@
+\subsection{Zadanie 14}
+n = 500, p = 0.1, P(X = 0) = 0.9, P(X = 1) = 0.1
+
+$$S_n = \sum\limits_{i=1}^{500} X_i$$
+Musimy obliczyć $ P(S_n > 60)$
+
+$$P(S_n > 60) = P(\sum\limits_{i=1}^{500} X_i > 60) = P(\frac{\sum\limits_{i=1}^{500} X_i - 50}{\sqrt{50 * 0.9}} > \frac{60 - 50}{\sqrt{50 * 0.9}} ) =$$
+$$ = P(z > \frac{10}{\sqrt{45}}) = P(z > 1.492) = 1 - P(z < 1.492) = $$
+$$ = 1 - \Phi(1.492) = 1 - 0.93189 = 0.06811 $$
