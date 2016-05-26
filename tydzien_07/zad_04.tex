@@ -1,0 +1,43 @@
+\subsection{Zadanie 4.}
+Niech $X$ będzie zmienną losową o rozkładzie $N (10, 25)$. Obliczyć:
+\begin{itemize}
+\item $P (X \leq 8)$,
+\item $P (X \in (9, 13))$, 
+\item $P (X \geq 9)$, 
+\item $P ( | X - 10 | \leq 5)$.
+\end{itemize}
+
+Rozwiązanie:
+
+$$ X \sim N ( m, \sigma )$$
+$$ m = 10, \ \ \sigma = 25 $$
+$$ X \sim N ( 10, 25 )$$
+$$ z = \frac{X - 10}{25} $$  \\
+
+1)
+$$ P( X \le 8 ) = P( \frac{X - 10}{25} \le \frac{8 - 10}{25} ) = $$ 
+$$ = P( z \le \frac{-2}{25} ) = P( z \le -0.08 ) =  $$
+$$ = \Phi(-0.08) = 1 - \Phi(0.08) = 1 - 0.53188 = 0.46812 $$ \\
+
+2)
+$$  P( X \in (9, 13) ) = P( \frac{9 - 10}{25} < \frac{X - 10}{25} < \frac{13 - 10}{25} ) = $$
+$$ = P(  \frac{-1}{25} < z < \frac{3}{25}) = P( -0.04 < z < 0.12 ) = $$
+$$ = \Phi(0.12) - \Phi(-0,04 )= \Phi(0.12) - ( 1 - \Phi(0.04) ) = $$
+$$ =  \Phi(0.12) - 1 + \Phi(0.04) = 0.58706 - 1 + 0.51595 = 0.10301 $$ \\
+
+3)
+$$  P( X \ge 9 ) = P( \frac{X - 10}{25} \ge \frac{9 - 10}{25} ) =  $$
+$$  = P( z \ge \frac{-1}{25} ) =   P( z \ge -0.04 ) = $$
+$$ = 1 - P( z \le -0.04 ) = 1 - ( 1 - \Phi(0.04) ) = $$
+$$ = 1 - 1 + \Phi(0.04) =\Phi(0.04) = 0.51595 $$ \\
+
+4)
+$$ | X - 10 | \le 5 $$
+$$ X - 10 \le 5 \wedge X - 10 \ge -5 $$
+$$ X \le 15 \wedge X \ge 5 $$ \\
+
+$$ P( X \in [5, 15] ) =  P( 5 \le X \le 15 ) = $$
+$$ = P( \frac{5 - 10}{25} \le \frac{X - 10}{25} \le \frac{15 - 10}{25} ) = $$
+$$ = P( \frac{-5}{25} \le z \le \frac{5}{25} ) = P( -0.2 \le z \le 0.2 ) = $$
+$$ = \Phi(0.2) - \Phi(-0.2) = \Phi(0.2) - (1 - \Phi(0.2) ) = \Phi(0.2) - 1 + \Phi(0.2) = $$
+$$ = 0.57926 - 1 +  0.57926 = 0.15852 $$

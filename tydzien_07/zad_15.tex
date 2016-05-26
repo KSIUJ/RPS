@@ -1,0 +1,18 @@
+\subsection{Zadanie 15}
+	
+Zmienne losowe $X_1, X_2 , \ldots X_{100}$ są niezależne o jednakowym rozkładzie wykładniczym z parametrem $\lambda = 4$. Dla
+$$
+X = \sum_{k=1}^{100} X_{k}
+$$ 
+obliczyć przybliżoną wartość wyrażenia $P(X>30)$.  \\ \\
+Dane:\\\\
+$  n = 100  $ \\
+$ \lambda = 4 $ \\
+$ X_1 \ldots X_{100} $ \\
+$ X_i ~ Exp(A) $ \\
+$$ \lambda e^{-\lambda*x} = 4*e^{-4*X} $$
+$$ E(X) = \frac{1}{\lambda} = 0,25 = m = M $$
+$$ D^{2}X = VatX = \frac{1}{x^{2}} = \frac{1}{16} = \sigma^{2} $$
+$$ P(\sum_{i=1}^{100} X_{i} > 30) = P(\frac{\sum_{i=1}^{100} X_{i} - n*m}{\sigma * \sqrt{n}} > \frac{30 - m*n}{\sigma * \sqrt{n}}) = $$
+$$ = P(z > \frac{5}{\frac{5}{2}}) = P( z > 2) = 1 -  P(z < 2) = $$
+$$ = 1 - \Phi(2) = 1 - 0,977 = 0,023 $$

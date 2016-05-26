@@ -1,0 +1,18 @@
+\subsection{Zadanie 11.}
+Załóżmy, że waga (w kg) losowo wybranego noworodka jest cechą o rozkładzie normalnym o nieznanej wartości średniej $m$ (kg) i odchyleniu standardowym $\sigma = 0,5$ (kg). Obliczymy prawdopodobieństwo, że średnia waga obliczona z prostej próby losowej o liczności $100$ (średnia waga $100$ losowo wybranych noworodków) różni się od prawdziwej wartości $m$ o więcej niż $0,1$ (kg).
+
+\textbf{ Podpowiedź.}
+$\bar X \sim N(m,\frac{0.5}{\sqrt{100}}) = N(m,0.05)$\\
+$ P( | \bar X - m | > 0.1 )  = ? $ % P(\bar X - m > 0.1) + P(\bar X - m < - 0.1) = ? $
+
+Rozwiązanie:
+
+$$ \bar X \sim N( m, \frac{0.5}{ \sqrt{100} } ) = N( m, 0.05 ) $$ \\
+$$ z = \frac{X - m}{0.05} $$ \\
+
+$$ P( | \bar X - m | > 0.1 ) = P( \bar X - m > 0.1 \vee \bar X - m < -0.1 ) = $$
+$$ = P( \bar X - m > 0.1 ) + P( \bar X - m < -0.1 ) = P( \frac{ \bar X - m}{0.05} > \frac{0.1}{0.05} ) + P(  \frac{ \bar X - m}{0.05} < - \frac{0.1}{0.05} ) = $$
+$$ = 1 -  P( \frac{\bar X - m}{0.05} < 2 ) + P( \frac{\bar X - m}{0.05} < -2 ) = $$
+$$ = 1 -  P( z < 2 ) + P( z < -2 ) = 1 - \Phi(2) + \Phi(-2) = $$
+$$ = 1 - \Phi(2) + ( 1 - \Phi(2) ) = 1 - \Phi(2) + 1 - \Phi(2) = $$
+$$ = 2 - 2 \cdot \Phi(2) = 2 - 2 \cdot 0.97725 = 0.0455 $$

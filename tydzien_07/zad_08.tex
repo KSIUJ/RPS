@@ -1,0 +1,35 @@
+\subsection{Zadanie 8.}
+
+Długość łodygi pewnego gatunku roślin ma rozkład normalny o parametrach $\mu = 70$ cm oraz $\sigma^2 = 27.04$ $\mbox{cm}^2$.
+Oblicz prawdopodobieństwo zdarzenia, że wylosowana roślina ma łodygę o długości:
+
+\begin{enumerate}[label=(\alph*)]
+\item co najwyżej 68 cm
+\item co najmniej  72 cm
+\item co najwyżej -10 cm
+\end{enumerate}
+
+
+Rozwiązanie:
+
+$$ X \sim N ( \mu, \sigma ) $$
+$$\mu = 70$$
+$$ \sqrt{ \sigma^2 } = \sqrt{27.04} = 5.2 $$
+$$ X \sim N ( 70, 5.2 ) $$
+$$ z = \frac{X - 70}{5.2} $$ \\
+
+\begin{enumerate}
+
+\item
+$$ P( X \le 68 ) = P(  \frac{X - 70}{5.2} \le \frac{68 - 70}{5.2} ) = $$
+$$ = P( z \le \frac{-2}{5.2} ) =  P( z \le -0.38 ) = \Phi(-0.38) = $$
+$$ = 1 - \Phi(0.38) = 1 - 0.64803 = 0.35197 $$ \\
+
+\item
+$$ P( X \ge 72 ) = P( \frac{X - 70}{5.2} \ge \frac{72 - 70}{5.2} ) = P( z \ge \frac{2}{5.2} ) =  $$
+$$ = P(z \ge 0.38 ) = 1 - P( z \le 0.38 ) = 1 - 0.64803 = 0.35197 $$ \\
+
+\item
+$$ P( X \le -10 ) = P( \frac{X - 70}{5.2} \le \frac{-10 - 70}{5.2} ) = $$
+$$ = P( z \le \frac{-80}{5.2} ) = P( z \le -15.38 ) = . . .$$
+\end{enumerate}

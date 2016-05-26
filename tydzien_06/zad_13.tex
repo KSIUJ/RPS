@@ -1,0 +1,34 @@
+\subsection{Zadanie 13}
+
+X jest zmienną losową o rozkładzie jednostajnym na przedziale $[-2,2]$
+
+$$F_Y(t)=P(Y \leq t)=P(X^2 \leq t)=P(|X| \leq \sqrt t)=\\
+P(X \in [- \sqrt t, \sqrt t])=F_X(\sqrt t)-F_X(-\sqrt t)$$
+
+Na podstawie gęstości znajdujemy wzór dystrybuanty obliczając 
+
+$$f(t)=\int_{-2}^{x}\frac{1}{4}dt=\frac{1}{4}*(x+2)\\$$
+
+Zatem:
+
+$$
+F_{X}(x)
+ = \left\{ \begin{array}{ll}
+\frac{1}{4}*(x+2) & \text{gdy } x \in [-2,2]\\
+0 & \text{gdy } x \notin [-2,2]
+\end{array} \right.
+$$
+
+Wyznaczamy gęstość rozkładu zmiennej losowej Y:
+
+$\phi(x)=x^2$
+
+$y=x^2$
+
+$x= \sqrt y$
+
+$h(x)= \sqrt y$
+
+$h'(x)= \frac{1}{2}*\frac{1}{\sqrt y}$
+
+$g(y)=f(h(y))*|h'(y)|*\chi_{\phi \in [-2,2]}{(y)}=\frac{1}{4}*\frac{1}{2}*\frac{1}{\sqrt y}, y \in [0,4]$

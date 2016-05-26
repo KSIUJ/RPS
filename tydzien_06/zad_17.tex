@@ -1,0 +1,11 @@
+\subsection{Zadanie 17}
+
+$X$ ma rozkład wykładniczy z parametrze $\lambda$. Znaleźć rozkład $Y = \frac{1}{X}$.
+
+$$
+F_Y(t)=P(Y \le t)=P(\frac{1}{X} \le t)=P(X \ge \frac{1}{t})=F_X(\frac{1}{t})=P(X \ge \frac{1}{t})=F_X(\frac{1}{t})
+$$
+
+$$
+f_Y(t)=(F_Y(t))^{'}=(F_X(\frac{1}{t}))^{'}=-\frac{1}{t^2}F^{'}_X(\frac{1}{t})=-\frac{1}{t^2}f_X(\frac{1}{t})=-\frac{1}{t^2}\lambda e^{-\lambda \frac{1}{t}}
+$$

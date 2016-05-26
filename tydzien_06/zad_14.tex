@@ -1,0 +1,22 @@
+\subsection{Zadanie 14}
+
+
+Niech X ma rozkład wykładniczy z parametrem $\lambda$ = 1. Znaleźć rozkład Y = $e^{-X}$
+
+
+$$
+f(x) = \left\{
+\begin{array}{rcl}
+ \lambda*e^{ -\lambda*x } = e^{-x} & \text{dla} & x \in [0,\infty)\\
+ 0 & \text{dla} & x < 0\\
+\end{array}
+\right.
+$$
+
+$
+F_{Y} = P(Y \leq t) = P(e^{-x} \leq t) = P(x \geq -log_{e}t) = P(1 - F_{X}(-log_{e}t))
+$
+
+$
+f_{Y}(y) = F_{Y}(t)' = (1 - F_{x}(-log_{e}t))' = -\dfrac{1}{t} * (-F_{x}(-log_{e}t))' = \dfrac{1}{t} * e^{log_{e}t} = \dfrac{1}{t} * t = 1
+$
