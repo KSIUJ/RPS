@@ -1,0 +1,38 @@
+\subsection{Zadanie 10}
+
+Z warunków zadania wynika, że dysponujemy próbką prostą $x_{1},...,x_{n}$ z rozkładu ciągłego, 
+którego gęstość $f$ jest następująca:
+$$
+f(x) =
+\left\{ \begin{array}{ll}
+\frac{1}{a} & \text{gdy } 0 \leq x \leq a \\
+0 & \text{wpp}
+\end{array} \right.
+$$
+Funkcją wiarygodności jest więc tutaj:
+$$
+l(a) = f(x_{1}) \cdot ... \cdot f(x_{n})
+$$
+W związku z tym, jeżeli wszystkie punkty $x_{i}$ leżą w przedziale $(0, a)$, to:
+$$
+l(a) = \frac{1}{a^{n}}
+$$
+Zaś w przeciwnym przypadku:
+$$
+l(a) = 0
+$$
+Zatem:
+$$
+l(a) = 
+\left\{ \begin{array}{ll}
+\frac{1}{a^n} & \text{dla } a \geq max\{x_{1},...,x_{n}\} \\
+0 & \text{dla } 0 < a < max\{x_{1},...,x_{n}\}
+\end{array} \right.
+$$
+W nietrywialnym przypadku, czyli gdy $max\{x_{1},...,x_{n}\} > 0$ funkcja ta jest dobrze określona,
+lecz nie jest ciągła w punkcie $ a = max\{x_{1},...,x_{n}\}$. \\
+Jednak widać, że akurat w tym punkcie funkcja $l$ przyjmuje wartość największą. \\
+Tak więc estymatorem największej wiarygodności parametru $a$ jest:
+$$
+\hat{a} = max\{x_{1},...,x_{n}\}
+$$

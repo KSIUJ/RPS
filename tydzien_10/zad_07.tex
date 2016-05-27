@@ -1,0 +1,26 @@
+\subsection{Zadanie 7}
+$$
+F(x) = 1 - (\frac{x}{\sigma})^{-\theta}
+
+\text{Obliczmy gęstość, aby wykorzystać ją potem przy obliczaniu wartości oczekiwanej:}
+$$
+f(x) = F'(x) = \frac{\theta}{\sigma}(\frac{x}{\sigma})^{-\theta-1} = \theta\sigma^{\theta}x^{-\theta-1}
+$$
+\text{Pierwszy moment:}
+$$
+\mu_1 = E(X) = \int\limits_{\sigma}^{\infty} xf(x)dx = \theta\sigma^{\theta} \int\limits_{\sigma}^{\infty}x^{-\theta}dx = \theta\sigma^{\theta}\frac{x^{-\theta+1}}{-\theta+1} \right {|} ^{x=\infty}_{x=\sigma} = \frac{\theta\sigma}{\theta-1},\  dla \  \theta > 1
+$$
+\text{Drugi moment:}
+$$
+\mu_2 = E(X^2) = \int\limits_{\sigma}^{\infty}x^2f(x)dx = \theta\sigma^{\theta}\int\limits_{\sigma}^{\infty}x{-\theta+1}dx = \frac{\theta\sigma^2}{\theta-2}, \ dla \ \theta>2
+$$
+$$
+\begin{cases} \mu_1 = \frac{\theta\sigma}{\theta-1} = m_1 \\
+\mu_2 = \frac{\theta\sigma^2}{\theta-2} = m_2\end{cases}
+$$
+$$
+\hat{\theta} = \sqrt{\frac{m_2}{m_2-m_1^2}}+1
+$$
+$$
+\hat{\sigma} = \frac{m_1(\hat{\theta}-1)}{\hat{\theta}}
+$$
