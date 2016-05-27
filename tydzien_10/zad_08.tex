@@ -1,0 +1,15 @@
+\subsection{Zadanie 8}
+
+$L(x,m,\sigma)=\displaystyle\prod\limits_{i=1}^n f_{m,\sigma} (x_i)$ - funkcja niepewności
+
+$$l=ln L(x,m,\sigma)=ln \displaystyle\prod\limits_{i=1}^n f_{m,\sigma} (x_i)=\displaystyle\sum\limits_{i=1}^n ln(f_{m,\sigma} (x_i))$$
+
+$$l(x)=\displaystyle\sum\limits_{i=1}^n ln(\frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{(x-m)^2}{2\sigma^2}})=\displaystyle\sum\limits_{i=1}^n ln (\frac{1}{\sqrt{2\pi\sigma^2}})+\displaystyle\sum\limits_{i=1}^n e^{-\frac{(x-m)^2}{2\sigma^2}}=\displaystyle\sum\limits_{i=1}^n ln (\frac{1}{\sqrt{2\pi\sigma^2}})+\displaystyle\sum\limits_{i=1}^n {\frac{(x-m)^2}{\sigma^2}}$$
+
+$${\frac{\theta}{\theta n}}-L(x_i,m_i,\sigma)=\displaystyle\sum\limits_{i=1}^n 2{\frac{(x_i-m)^2}{2\sigma^2}}={\frac{1}{\sigma^2}}(\displaystyle\sum\limits_{i=1}^n x_i-nm)$$
+
+$${\frac{1}{\sigma^2}}(\displaystyle\sum\limits_{i=1}^n x_i-nm)=0 \Leftrightarrow\displaystyle\sum\limits_{i=1}^n x_i-nm=0$$
+
+$$\displaystyle\sum\limits_{i=1}^n x_i=nm$$
+
+$$m={\frac{\displaystyle\sum\limits_{i=1}^n x_i}{n}}$$
