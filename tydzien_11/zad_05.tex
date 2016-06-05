@@ -1,0 +1,70 @@
+\subsection{zadanie 5}
+Wykonano pomiar liczby skrętów dla losowo wybranych odcinków przędzy o długości 1~m, uzyskując wyniki: 87, 102, 119, 81, 97, 93, 100, 114, 99, 100, 112, 93, 95, 85, 123, 99.
+
+Zakładając, że liczba skrętów odcinków  przędzy ma rozkład normalny, znaleźć 90\%-owe realizacje przedziałów ufności wariancji i odchylenia standardowego liczby skrętów całej partii przędzy. 
+
+
+
+\textbf{\underline{Dane:}} $n = 16$, $\alpha = 0.1$
+\newline
+
+\textbf{\underline{Wzór, z którego będę korzystać:}}
+$$
+\left(
+g_1(\alpha,n-1) \cdot S^{*},
+g_2(\alpha,n-1) \cdot S^{*}
+\right)
+$$
+gdzie 
+$$
+g_2(\alpha,n-1)=\sqrt{\frac{n-1}{\chi^2(1-\frac{1}{2} \cdot \alpha, n-1)}} \mbox{ oraz } g_1(\alpha,n-1)=\sqrt{\frac{n-1}{\chi^2(\frac{1}{2} \cdot \alpha, n-1)}}
+$$
+
+\textbf{\underline{Rozwiązanie:}}
+\begin{flushleft}
+$\bar X = \frac{1}{n}  \cdot \sum_{i=1}^{n} X_{i} $ \newline \newline
+$\bar X = \frac{87 + 102 + 119 + 81 + 97 + 93 + 100 + 114 + 99 + 100 + 112 + 93 + 95 + 85 + 123 + 99}{16} \approx 100 $ \newline \newline
+$S^{*2} = \frac{1}{n-1}  \cdot \sum_{i=1}^{n} (X_{i} - \bar X)^{2}$   \newline \newline
+$S^{*2} = \frac{(-13)^{2} + 2^{2} + 19^{2} + (-19)^{2} + (-3)^{2} + (-7)^{2} + 14^{2} + (-1)^{2} + 12^{2} + (-7)^{2} + (-5)^{2} + (-15)^{2} + 23^{2} + (-1)^{2}}{15} = \frac{2123}{15} \approx 141.53 $ \newline \newline
+$S^{*} = \sqrt{S^{*2}} =\sqrt{141.53} \approx 11.9 $
+\end{flushleft}
+
+
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+\hline
+& & \\
+Wrór: & Rozwiązanie: & Wartość kwantyla rozkładu $\chi^2$:\\
+& &\\ \hline
+& &\\ 
+& \Large{$g_1(0.1, 15)=\sqrt{\frac{15}{\chi^2(\frac{1}{2} \cdot 0.1, 15)}} =$} &\\
+& &\\ 
+$g_1(\alpha,n-1)=\sqrt{\frac{n-1}{\chi^2(\frac{1}{2} \cdot \alpha, n-1)}}$ &  \Large{$=\sqrt{\frac{15}{\chi^2(0.05, 15)}}=$} & $\chi^2(0.05, 15) = 24.996$\\ 
+& &\\ 
+&  \Large{$=\sqrt{\frac{15}{24.996}} \approx \sqrt{0.6} \approx 0.77$} &\\ 
+& &\\ \hline
+& & \\
+& \Large{$g_2(0.1, 15)=\sqrt{\frac{15}{\chi^2(1-\frac{1}{2} \cdot 0.1, 15)}}=$} &\\
+& &\\
+$g_2(\alpha,n-1)=\sqrt{\frac{n-1}{\chi^2(1-\frac{1}{2} \cdot \alpha, n-1)}}$  & \Large{$=\sqrt{\frac{15}{\chi^2(0.95, 15)}}=$} & $\chi^2(0.95, 15) = 7.261$\\
+& &\\
+& \Large{$=\sqrt{\frac{15}{7.261}} \approx \sqrt{2.07} \approx 1.44$} &\\
+& &\\ \hline
+\end{tabular}
+
+\begin{tabular}{ |c|c|c| } 
+\hline
+& &\\
+& Lewe domknięcie przedziału & Prawe domknięcie przedziału \\ 
+& & \\ \hline
+& & \\
+Wzór & $L = g_1(\alpha,n-1) \cdot S^{*}$ & $P = g_2(\alpha,n-1) \cdot S^{*}$ \\
+& & \\\hline
+& & \\
+&  $L = 0.77 \cdot 11.9 = 9.163$ & $P = 1.44 \cdot 11.9 = 17.136$  \\
+& & \\
+& & \\\hline
+\end{tabular}
+\end{center}
+
+\textbf{\underline{Odpowiedź:}} \large{Szukanym przedziałem ufności jest przedział: \textbf{$\left( 9.163, 17.136  \right)$}.}
