@@ -1,0 +1,61 @@
+\subsection{zadanie 6}
+W celu sprawdzenia dokładności skrawania za pomocą pewnego urządzenia, dokonano pomiarów wykonanych 50 części i otrzymano $S^2=0.00068$. Zakładając, że rozkład błędów wymiarów części jest normalny o nieznanym $\sigma$, na poziomie ufności $0.95$ wyznaczyć na podstawie danych realizację przedziałów ufności dla odchylenia standardowego $\sigma$. 
+\newline
+
+\textbf{\underline{Dane:}}
+
+$n = 50$ 
+
+$\alpha = 0.05$ 
+
+$S^{2} = 0.00068$
+
+\textbf{\underline{Wzór, z którego będę korzystać:}}
+$$
+\left(
+\frac{S \cdot \sqrt{2 \cdot n}}{\sqrt{2 \cdot n-3}+u(1-\frac{1}{2} \cdot \alpha)},
+\frac{S \cdot \sqrt{2 \cdot n}}{\sqrt{2 \cdot n-3}-u(1-\frac{1}{2} \cdot \alpha)}
+\right)
+$$
+
+\textbf{\underline{Rozwiązanie:}}
+
+$S = \sqrt{S^{2}} = \sqrt{0.00068} \approx 0.026$
+
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+\hline
+& &\\
+& Lewe domknięcie przedziału & Prawe domknięcie przedziału \\ 
+& & \\ \hline
+& & \\
+Wzór: & \large{$L = \frac{S \cdot \sqrt{2 \cdot n}}{\sqrt{2 \cdot n-3}+u(1-\frac{1}{2} \cdot \alpha)}$} & \large{$P = \frac{S \cdot \sqrt{2 \cdot n}}{\sqrt{2 \cdot n-3}-u(1-\frac{1}{2} \cdot \alpha)}$} \\
+& & \\ \hline
+& & \\
+ & $L = \frac{0.026 \cdot \sqrt{2 \cdot 50}}{\sqrt{2 \cdot 50-3}+u(1-\frac{1}{2} \cdot 0.05)} =$ & $P = \frac{0.026 \cdot \sqrt{2 \cdot 50}}{\sqrt{2 \cdot 50-3}-u(1-\frac{1}{2} \cdot 0.05)} =$ \\
+& & \\
+ & $= \frac{0.026 \cdot 10}{\sqrt{97}+u(1- 0.025)} =$ & $= \frac{0.026 \cdot 10}{\sqrt{97}-u(1- 0.025)} =$ \\
+& & \\
+Rozwiązanie:  & $= \frac{0.26}{\sqrt{97}+u(0.975)} =$ & $= \frac{0.26}{\sqrt{97}-u(0.975)} =$ \\
+& & \\
+ & $= \frac{0.26}{9.85+1.96} =$ & $= \frac{0.26}{9.85-1.96} =$ \\
+& & \\
+ & $= \frac{0.26}{11.81} =$ & $= \frac{0.26}{7.89} =$ \\
+& & \\
+ & $= \approx 0.022015$ & $= \approx 0.032953$ \\
+& & \\ \hline
+\end{tabular}
+
+\begin{tabular}{ |c| } 
+\hline
+\\
+$\sqrt{97} \approx 9.85$\\
+\\ \hline
+\\
+Wartość kwantyla $u_{\alpha}$ rozkadu normalnego $N(0, 1)$ odczytuję z tablic:  \\
+$u(0.975) = 1.96$\\
+\\ \hline
+\end{tabular}
+\end{center}
+
+\textbf{\underline{Odpowiedź:}} \large{Szukanym przedziałem ufności jest przedział: \textbf{$\left( 0.022015, 0.032953 \right)$}.}
