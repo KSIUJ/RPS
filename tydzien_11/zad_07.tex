@@ -1,0 +1,50 @@
+\subsection{zadanie 7}
+W centrali telefonicznej dokonano 17 obserwacji długości losowo wybranych rozmów w ciągu jednego dnia i otrzymano (w min): $\bar X = 5.48$, $S=1.2$; na tej podstawie -- przy założeniu, że długość rozmów telefonicznych mają rozkład normalny -- wyznaczyć 95\%-ową realizację przedziału ufności dla wartości przeciętnej długości rozmowy telefonicznej przeprowadzonej za pośrednictwem tej centrali w danym dniu.
+
+
+\textbf{\underline{Dane:}} \ \ $n = 17$,
+$\alpha = 0.05$
+
+\textbf{\underline{Wzór, z którego będę korzystać:}}
+$$
+\left(
+\bar X - t \left(1-\frac{\alpha}{2},n-1 \right) \cdot \frac{S}{\sqrt{n-1}},
+\bar X + t \left(1-\frac{\alpha}{2},n-1 \right) \cdot \frac{S}{\sqrt{n-1}}
+\right)
+$$
+
+\textbf{\underline{Rozwiązanie:}}
+
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+\hline
+& &\\
+& Lewe domknięcie przedziału & Prawe domknięcie przedziału \\ 
+& & \\ \hline
+& & \\
+Wzór: & \large{$L = \bar X - t \left(1-\frac{\alpha}{2},n-1 \right) \cdot \frac{S}{\sqrt{n-1}}$} & \large{$P = \bar X + t \left(1-\frac{\alpha}{2},n-1 \right) \cdot \frac{S}{\sqrt{n-1}}$} \\
+& & \\ \hline
+& & \\
+& $L = 5.48 - t \left(1-\frac{0.05}{2}, 16 \right) \cdot \frac{1.2}{\sqrt{16}} =$ & $P = 5.48 + t \left(1-\frac{0.05}{2}, 16 \right) \cdot \frac{1.2}{\sqrt{16}} = $ \\
+& & \\
+& $= 5.48 - t \left(1-0.025, 16 \right) \cdot \frac{1.2}{4} =$ & $= 5.48 + t \left(1-0.025, 16 \right) \cdot \frac{1.2}{4} = $ \\
+& & \\
+Rozwiązanie: & $= 5.48 - t \left(0.975, 16 \right) \cdot 0.3 =$ & $= 5.48 + t \left(0.975, 16 \right) \cdot 0.3 = $ \\
+& & \\
+ & $= 5.48 - 0.128 \cdot 0.3 =$ & $= 5.48 + 0.128 \cdot 0.3 = $ \\
+& & \\
+ & $= 5.48 - 0.0384 = 5.4416$ & $= 5.48 + 0.0384 = 5.5184$ \\
+& & \\ \hline
+\end{tabular}
+\newline
+\begin{tabular}{ |c| } 
+\hline
+\\
+Wartość kwantyla rozkładu t-Studenta odczytuje z tablic: \\
+$ t \left(0.975, 16 \right) = 0.128$ \\
+\\ \hline
+\end{tabular}
+\end{center}
+
+\textbf{\underline{Odpowiedź:}} \Large{Szukanym przedziałem ufności jest przedział: \textbf{$\left(5.4416, 5.5184 \right)$}.}
+\newline
