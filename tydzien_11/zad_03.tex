@@ -1,0 +1,68 @@
+\subsection{zadanie 3}
+W celu wyznaczenia ładunku elektrycznego wykonano 26 pomiarów tego ładunku metodą Millikana, otrzymując:
+$$
+\bar X = 1.574\cdot10^{-19}, \mbox{ } S = 0.043 \cdot 10^{-19}
+$$
+
+Zakładając że pomiary pochodzą z rozkładu normalnego o nieznanym parametrze $\sigma$ wyznaczyć na podstawie danych 99\%-owy przedział ufności. 
+\newline
+
+\textbf{\underline{Dane:}} $n = 26$, $\alpha = 0.01$
+\newline
+
+\textbf{\underline{Wzór, z którego będę korzystać:}}
+$$
+\left(
+\bar X - t \left(1-\frac{\alpha}{2},n-1 \right) \cdot \frac{S}{\sqrt{n-1}},
+\bar X + t \left(1-\frac{\alpha}{2},n-1 \right) \cdot \frac{S}{\sqrt{n-1}}
+\right)
+$$
+
+
+\textbf{\underline{Rozwiązanie:}}
+
+\begin{center}
+\begin{tabular}{ |c|c| } 
+\hline
+& \\
+& Lewe domknięcie przedziału \\ 
+& \\ \hline
+& \\
+Wzór & $L = \bar X - t \left(1-\frac{\alpha}{2},n-1 \right) \cdot \frac{S}{\sqrt{n-1}}$ \\
+& \\\hline
+& \\
+& $L = 1.574 \cdot 10^{-19} - t \left(1-\frac{0.01}{2}, 25 \right) \cdot \frac{0.043 \cdot 10^{-19}}{\sqrt{25}} = $ \\
+& $= 1.574 \cdot 10^{-19} - t \left(1 - 0.005, 25 \right) \cdot \frac{0.043 \cdot 10^{-19}}{5} = $ \\
+Rozwiązanie: & $= 1.574 \cdot 10^{-19} - t \left(0.995, 25 \right) \cdot 0.0086 \cdot 10^{-19} = $ \\
+& $= 1.574 \cdot 10^{-19} - 0.127 \cdot 0.0086 \cdot 10^{-19}= $ \\
+& $=  1.574 \cdot 10^{-19} - 0.0010922 \cdot 10^{-19} = $ \\
+& $= (1.574 - 0.0010922) \cdot  10^{-19} \approx 1.5729 \cdot 10^{-19} $ \\
+& \\\hline
+\end{tabular}
+
+\begin{tabular}{ |c|c| } 
+\hline
+& \\
+& Prawe domknięcie przedziału \\ 
+& \\ \hline
+& \\
+Wzór & $P = \bar X + t \left(1-\frac{\alpha}{2},n-1 \right) \cdot \frac{S}{\sqrt{n-1}}$ \\
+& \\\hline
+& \\
+&  $P =  1.574 \cdot 10^{-19} + t \left(1-\frac{0.01}{2}, 25 \right) \cdot \frac{0.043 \cdot 10^{-19}}{\sqrt{25}} = $  \\
+& $= 1.574 \cdot 10^{-19} + t \left(1 - 0.005, 25 \right) \cdot \frac{0.043 \cdot 10^{-19}}{5}= $  \\
+Rozwiązanie: & $=  1.574 \cdot 10^{-19} + t \left(0.995, 25 \right) \cdot 0.0086 \cdot 10^{-19} = $ \\
+& $= 1.574 \cdot 10^{-19} + 0.127 \cdot 0.0086 \cdot 10^{-19} = $ \\
+& $= 1.574 \cdot 10^{-19} + 0.0010922 \cdot 10^{-19} = $ \\
+&  $= (1.574 + 0.0010922) \cdot  10^{-19} \approx 1.5750 \cdot  10^{-19}$  \\
+& \\\hline
+\end{tabular}
+\begin{tabular}{ |c c| } 
+\hline
+&  \\
+Wartość rozkładu t-Studenta odczytuję z tablic:  &\\
+$t(0.995, 25) = 0.127$  & \\
+& \\ \hline
+\end{tabular}
+\end{center} 
+\textbf{\underline{Odpowiedź:}} \large{Szukanym przedziałem ufności jest przedział: \textbf{$\left( 1.5729 \cdot 10^{-19}, 1.5750 \cdot  10^{-19} \right)$}.}
