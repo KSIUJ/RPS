@@ -1,0 +1,52 @@
+\subsection{zadanie 4}
+Z populacji włókien bawełny pobrano $300$--elementową próbkę włókien i zmierzono ich długości. Obliczono $\bar X = 27,43$ oraz $S^{*2} =51,598$. Znaleźć 95\% realizacje przedziału ufności dla nieznanej wartości.
+
+\textbf{\underline{Dane:}} $n = 300$, $\alpha = 0.05$
+\newline
+
+\textbf{\underline{Wzór, z którego będę korzystać:}}
+$$
+\left(
+\bar X - u \left(1-\frac{\alpha}{2} \right)  \cdot \frac{S^{*}}{\sqrt{n}},
+\bar X + u \left(1-\frac{\alpha}{2} \right)  \cdot \frac{S^{*}}{\sqrt{n}}
+\right)
+$$
+
+\textbf{\underline{Rozwiązanie:}}
+$$S^{*} = \sqrt{S^{*2}} = \sqrt{51,598} \approx 7.183$$
+
+\begin{center}
+\begin{tabular}{ |c|c|c| } 
+\hline
+& &\\
+& Lewe domknięcie przedziału & Prawe domknięcie przedziału \\ 
+& & \\ \hline
+& & \\
+Wzór & $L = \bar X - u \left(1-\frac{\alpha}{2} \right)  \cdot \frac{S^{*}}{\sqrt{n}}$ & $P = \bar X + u \left(1-\frac{\alpha}{2} \right)  \cdot \frac{S^{*}}{\sqrt{n}}$ \\
+& & \\\hline
+& & \\
+&  $L = 27.43 - u \left(1-\frac{0.05}{2} \right) \cdot \frac{7.183}{\sqrt{300}} =$ & $P = 27.43 + u \left(1-\frac{0.05}{2} \right)  \cdot \frac{7.183}{\sqrt{300}} =$  \\
+& & \\
+&  $= 27.43 - u \left(1-0.025 \right)  \cdot \frac{7.183}{10 \cdot \sqrt{3}} = $ & $= 27.43 + u \left(1-0.025 \right)  \cdot \frac{7.183}{10 \cdot \sqrt{3}} =$ \\
+& & \\
+Rozwiązanie: &  $= 27.43 - u \left(0,975 \right)  \cdot \frac{7.183}{10 \cdot \sqrt{3} =}$ &  $= 27.43 + u \left(0,975 \right)  \cdot \frac{7.183}{10 \cdot \sqrt{3}} =$ \\
+& & \\
+&  $= 27.43 - 1.96  \cdot \frac{7.183}{10 \cdot \sqrt{3}} =$ &   $= 27.43 + 1.96  \cdot \frac{7.183}{10 \cdot \sqrt{3}} =$\\
+& & \\
+&  $= 27.43 - 0.813 = 26.617 $ &   $= 27.43 + 0.813 = 28.243 $\\
+& & \\\hline
+\end{tabular}
+
+\begin{tabular}{ |c| } 
+\hline
+ \\ 
+Wartość kwantyla $u_{\alpha}$ rozkadu normalnego $N(0, 1)$ odczytuję z tablic:  \\
+$ u \left(0.975 \right) = 1.96$   \\
+ \\ \hline
+\\
+ $1.96  \cdot \frac{7.183}{10 \cdot \sqrt{3}} \approx  0.813 $ \\ 
+\\ \hline
+\end{tabular}
+\end{center}
+
+\textbf{\underline{Odpowiedź:}} \large{Szukanym przedziałem ufności jest przedział: \textbf{$\left( 26.617, 28.243 \right)$}.}
